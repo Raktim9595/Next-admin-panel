@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+@tailwind components;
+
+@layer components {
+  .menu-component {
+    @apply flex space-x-3 text-gray-700 cursor-pointer rounded-lg hover:bg-indigo-50 transition-all duration-200 ease-out py-1.5 px-1 items-center active:bg-indigo-200 active:shadow;
+  }
+  .active-menu {
+    @apply bg-indigo-50;
+  }
+  .btn-approved {
+    @apply bg-green-100 text-green-500 px-3 rounded-md py-1 active:bg-green-200 active:text-green-600 active:shadow-md transition-all duration-300 ease-out
+  }
+  .btn-declined {
+    @apply bg-red-100 text-red-500 px-3 rounded-md py-1 active:bg-red-200 active:text-red-600 active:shadow-md transition-all duration-300 ease-out
+  }
+  .btn-pending {
+    @apply bg-yellow-100 text-yellow-500 px-3 rounded-md py-1 active:bg-yellow-200 active:text-yellow-600 active:shadow-md transition-all duration-300 ease-out
+  }
+  .btn-update {
+    @apply bg-blue-500 text-white px-3 rounded-md py-1 active:bg-blue-700 active:shadow-md transition-all duration-300 ease-out
+  }
+}
+
+.main-container {
+  flex: 4;
+}
+
+.main-container::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+.main-container::-webkit-scrollbar-track {
+  background: #d3d3d3;        /* color of the tracking area */
+}
+
+.main-container::-webkit-scrollbar-thumb {
+  background-color: #778899;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+.featured-icon {
+  height: 14px !important;
+}
+
+.widgetLg-container {
+  flex: 2;
+}
+
+.userEdit-container {
+  flex: 2
+}
+
+.editUser-icons {
+  height: 14px !important;
+}
